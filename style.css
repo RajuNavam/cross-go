@@ -22,6 +22,40 @@ body {
 //        HUD        //
 /////////////////////*/
 
+.cube-count-lbl {
+	font-size: 0.46em;
+}
+
+.pause-btn {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 0.8em 0.65em;
+}
+
+.pause-btn > div {
+	position: relative;
+	width: 0.8em;
+	height: 0.8em;
+	opacity: 0.75;
+}
+
+.pause-btn > div::before,
+.pause-btn > div::after {
+	content: '';
+	display:block;
+	display: block;
+	width: 34%;
+	height: 100%;
+	position: absolute;
+	background-color: #fff;
+}
+
+.pause-btn > div::after {
+	right: 0;
+}
+
+
 .slowmo {
 	position: fixed;
 	bottom: 0;
@@ -70,37 +104,6 @@ body {
 	user-select: none;
 }
 
-.cube-count-lbl {
-	font-size: 0.46em;
-}
-
-.pause-btn {
-	position: fixed;
-	top: 0;
-	right: 0;
-	padding: 0.8em 0.65em;
-}
-
-.pause-btn > div {
-	position: relative;
-	width: 0.8em;
-	height: 0.8em;
-	opacity: 0.75;
-}
-
-.pause-btn > div::before,
-.pause-btn > div::after {
-	content: '';
-	display: block;
-	width: 34%;
-	height: 100%;
-	position: absolute;
-	background-color: #fff;
-}
-
-.pause-btn > div::after {
-	right: 0;
-}
 
 
 
